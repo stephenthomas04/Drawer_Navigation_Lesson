@@ -20,7 +20,7 @@ export default function App() {
           drawerPosition: "left",
           swipeEdgeWidth: 500,
           drawerHideStatusBarOnOpen: true,
-          headerShown: false,
+          headerShown: true,
 
           drawerStyle: {
             backgroundColor: "#c6cbef",
@@ -60,10 +60,11 @@ export default function App() {
           component={Information}
           options={{
             drawerIcon: () => (
-              <FontAwesome name="info-circle" size={24} color="black" />
+              <FontAwesome name="info-circle" size={24} color = "tomato" />
             ),
           }}
         />
+        
       </Drawer.Navigator>
     </NavigationContainer>
   );
